@@ -6,24 +6,18 @@ public class FriendApp {
 
 	public static void main(String[] args) {
 
-		Friend[] friendArray = new Friend[3];
+		Friend[] friendArray = new Friend[4];
 		Scanner sc = new Scanner(System.in);
-		Friend info1 = new Friend();
-		Friend info2 = new Friend();
-		Friend info3 = new Friend();
+	
 		System.out.println("친구를 3명 등록해 주세요");
 		
-		
-		friendArray[0] = info1;
-		friendArray[1] = info2;
-		friendArray[2] = info3;
-		
+	
 		// for문 시작
 		// 친구정보 3명 입력 로직 --> 반복문 사용
 		
 		
 		for (int i = 0; i < friendArray.length; i++) {
-						
+			friendArray[i] = new Friend();		
 			System.out.print("이름 : ");
 			friendArray[i].setName(sc.next());
 			System.out.print("핸드폰 : ");
